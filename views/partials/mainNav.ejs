@@ -1,0 +1,55 @@
+<!--main Navigation -->  
+  
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">R<img src="https://cdn.pixabay.com/photo/2012/04/14/12/41/s-33756_1280.png" width="23" height="23" class="d-inline-block align-middel" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home"){ %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/"><i class="fas fa-lg fa-igloo"></i></i> Home </a>
+        </li>
+
+        <% if (title == "About Me") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/about"><i class="fas fa-lg fa-info-circle"></i> About Me </a>
+        </li>
+
+        <% if (title == "Projects") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/projects"><i class="fas fa-lg fallg fa-tasks"></i> Projects </a>
+        </li>
+
+        <% if (title == "Services") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/services"><i class="fas fa-lg fa-cogs"></i> Services </a>
+        </li>
+
+        <% if (title == "Contact Me") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/contact"><i class="fas fa-lg fa-id-card-alt"></i> Contact Me </a>
+        </li>
+    </div>
+  </nav>
+     
+
