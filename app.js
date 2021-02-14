@@ -1,3 +1,8 @@
+/*  FileName: HomePage 
+    Name:RozWhite 
+    ID:1234567 
+    Date: 13/02/2021 */
+
 // installed 3rd party packages 
 let createError = require('http-errors');
 let express = require('express');
@@ -24,7 +29,7 @@ app.use(cookieParser());
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/css', express.static(__dirname + 'public/css'));
-
+app.use('/css', express.static(__dirname + 'public/Assets'));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 
