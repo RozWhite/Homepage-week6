@@ -28,8 +28,9 @@ app.use(cookieParser());
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/css', express.static(__dirname + 'public/css'));
-app.use('/css', express.static(__dirname + 'public/Assets'));
+//app.use('/css', express.static(__dirname + 'public/css'));
+//app.use('/Assets', express.static(__dirname + 'public/Assets'));
+
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 
