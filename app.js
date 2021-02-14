@@ -19,8 +19,6 @@ let app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -28,12 +26,7 @@ app.use(cookieParser());
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use('/css', express.static(__dirname + 'public/css'));
-//app.use('/Assets', express.static(__dirname + 'public/Assets'));
-
 app.use(express.static(path.join(__dirname, 'node_modules')));
-
-
 
 app.use('/', indexRouter );
 app.use('/users', usersRouter);
