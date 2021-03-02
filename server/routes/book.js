@@ -24,10 +24,10 @@ function requireAuth(req, res, next)
 router.get('/', bookController.displayBookList);
    
 /*Get Route for displaying the Add Page  --Create Operatin*/
-router.get('/add', bookController.displayAddPage);
+router.get('/add',requireAuth, bookController.displayAddPage);
 
 /*Post Route for processing the Add Page  --Create Operatin*/
-router.post('/add', bookController.processAddPage);
+router.post('/add', requireAuth,bookController.processAddPage);
   
 /*Get Route for displaying the Edit Page  --Update Operatin*/
 router.get('/edit/:id', bookController.displayEditPage);
