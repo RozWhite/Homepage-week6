@@ -4,8 +4,6 @@ let mongoose = require('mongoose');
 
 let passport=require('passport');
 
-
-
 // connect to our Book Model
 //let Book= require('../models/book');
 let bookController=require('../controllers/book');
@@ -22,13 +20,9 @@ function requireAuth(req, res, next)
 
 }
 
-
-
-
 // Get Route for the Book list Page --Read Operatin
 router.get('/', bookController.displayBookList);
-  
-  
+   
 /*Get Route for displaying the Add Page  --Create Operatin*/
 router.get('/add', bookController.displayAddPage);
 
